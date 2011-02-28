@@ -1,0 +1,32 @@
+<projectDescription>
+  <id>1298896800406</id>
+  <name>meetingpoint</name>
+  <asVersion>1</asVersion>
+  <boundTemplate>file:///C|/Documents and Settings/user/Local Settings/Application Data/Adobe/Flash CS5/ru_RU/Configuration/ActionScript 3.0/Templates/boundClass_as2.as</boundTemplate>
+  <classTemplate>file:///C|/Documents and Settings/user/Local Settings/Application Data/Adobe/Flash CS5/ru_RU/Configuration/ActionScript 3.0/Templates/standardClass_as2.as</classTemplate>
+  <classPath>./classes</classPath>
+  <defaultApp>file://Rash/docs/работа/projects/meetingpoint/loader.fla</defaultApp>
+  <rootURI>file://Rash/docs/работа/projects/meetingpoint/</rootURI>
+  <flexSDK/>
+  <sources editable="false"/>
+  <libraries editable="false"/>
+  <externalLibraries editable="false"/>
+  <compileList editable="false">
+    <uri label="loader.fla">file://Rash/docs/работа/projects/meetingpoint/loader.fla</uri>
+    <uri label="WM.fla">file://Rash/docs/работа/projects/meetingpoint/WM.fla</uri>
+    <uri label="VideoConference.fla">file://Rash/docs/работа/projects/meetingpoint/Components/RichVideoConference/VideoConference.fla</uri>
+    <uri label="WhiteboardPlus.fla">file://Rash/docs/работа/projects/meetingpoint/Components/WhiteboardPlus/WhiteboardPlus.fla</uri>
+    <uri label="Whiteboard.fla">file://Rash/docs/работа/projects/meetingpoint/Components/Whiteboard/Whiteboard.fla</uri>
+    <uri label="ScrollWindow.fla">file://Rash/docs/работа/projects/meetingpoint/Components/ScrollWindow/ScrollWindow.fla</uri>
+    <uri label="Presentation.fla">file://Rash/docs/работа/projects/meetingpoint/Components/Presentation/Presentation.fla</uri>
+    <uri label="Poll.fla">file://Rash/docs/работа/projects/meetingpoint/Components/Poll/Poll.fla</uri>
+    <uri label="Player.fla">file://Rash/docs/работа/projects/meetingpoint/Components/Player/Player.fla</uri>
+    <uri label="OrologioTest.fla">file://Rash/docs/работа/projects/meetingpoint/Components/OrologioTest/OrologioTest.fla</uri>
+    <uri label="Orologio.fla">file://Rash/docs/работа/projects/meetingpoint/Components/Orologio/Orologio.fla</uri>
+    <uri label="Chat.fla">file://Rash/docs/работа/projects/meetingpoint/Components/Chat/Chat.fla</uri>
+  </compileList>
+  <recentFiles editable="false">
+    <uri label="loader.fla">file://Rash/docs/работа/projects/meetingpoint/loader.fla</uri>
+  </recentFiles>
+  <locations editable="false"/>
+</projectDescription>
