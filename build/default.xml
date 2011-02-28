@@ -1,0 +1,22 @@
+<user name="debug" fullname="Debugger" id="3" role="poweruser" authentication_domain="default" authentication_id="3" authentication_token="test" />
+
+<application languageURI="http://localhost/translate.php" language="it_utf8" />
+
+<connection autoconnect="true" protocol="rtmp" host="193.206.55.78" port="1935" application="Meeting" room="debug2" domain="di.unipmn.it"/>
+
+<windowmanager URL="WM.swf" menu="menu.xml" />
+
+<components>
+<preloaded URL="Chat.swf" label="Chat v1.0" />
+<external URL="ChatEx.swf" label="Chat EX" />
+<external URL="Orologio.swf" label="Clock v1.0" />
+<embedded contentPath="People" label="People List v1.0" />
+<external URL="Poll.swf" label="Poll v1.0" />
+<external URL="Presentation.swf" label="Presentation v1.0" param="listURL=http://meetingpoint.di.unipmn.it/mod/meetingpoint/files/list.php?a%3d1" />
+<external URL="RichVideoConference.swf" label="Rich VideoConference v1.0" param="imageUrl=http://meetingpoint.di.unipmn.it/mod/meetingpoint/files/getimage.php?a%3d1" />
+<external URL="Whiteboard.swf" label="Whiteboard v1.0" />
+<external URL="WhiteboardPlus.swf" label="Whiteboard Plus v1.0" param="listURL=http://meetingpoint.di.unipmn.it/mod/meetingpoint/files/list.php?a%3d1" />
+<external URL="Screencaster.swf" label="Screencaster" param="url=http://meetingpoint.di.unipmn.it/mod/meetingpoint/files/screen.php?a%3d1" />
+<external URL="Player.swf" label="Player" param="listURL=http://meetingpoint.di.unipmn.it/mod/meetingpoint/files/listvideo.php?a%3d1" />
+
+</components>
