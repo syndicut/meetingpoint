@@ -4,7 +4,7 @@
   <asVersion>1</asVersion>
   <boundTemplate>file:///C|/Documents and Settings/user/Local Settings/Application Data/Adobe/Flash CS5/ru_RU/Configuration/ActionScript 3.0/Templates/boundClass_as2.as</boundTemplate>
   <classTemplate>file:///C|/Documents and Settings/user/Local Settings/Application Data/Adobe/Flash CS5/ru_RU/Configuration/ActionScript 3.0/Templates/standardClass_as2.as</classTemplate>
-  <classPath>./classes</classPath>
+  <classPath>.</classPath>
   <defaultApp>file://Rash/docs/работа/projects/meetingpoint/loader.fla</defaultApp>
   <rootURI>file://Rash/docs/работа/projects/meetingpoint/</rootURI>
   <flexSDK/>
@@ -27,6 +27,8 @@
   </compileList>
   <recentFiles editable="false">
     <uri label="loader.fla">file://Rash/docs/работа/projects/meetingpoint/loader.fla</uri>
+    <uri label="WindowManager.as">file://Rash/docs/работа/projects/meetingpoint/classes/it/unipmn/di/Meeting/UIObjects/WindowManager/WindowManager.as</uri>
+    <uri label="WM.fla">file://Rash/docs/работа/projects/meetingpoint/WM.fla</uri>
   </recentFiles>
   <locations editable="false"/>
 </projectDescription>

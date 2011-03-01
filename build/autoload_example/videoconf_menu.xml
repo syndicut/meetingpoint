@@ -1,0 +1,76 @@
+<?xml version="1.0" ?> 
+<menu label="Приложения">
+</menu>
+
+<menu label="Соединение">
+	<menuitem label="Соединиться" action="function" callback="connectAll" object="_parent" />
+	<menuitem label="Отсоединиться" action="function" callback="disconnectAll" object="_parent" />
+<!--	<menuitem label="Upload File" action="function" callback="fileUpload" object="_parent"  param="http://stream.mfn.unipmn.it:8080/upload.php" />
+	<menuitem type="separator" /> 
+	<menuitem label="Bandwidth" >
+		<menuitem label="Modem" action="function" callback="setBandwidth" param="Modem" object="_parent" />
+		<menuitem label="Adsl" action="function" callback="setBandwidth" param="Adsl" object="_parent" />
+		<menuitem label="LAN" action="function" callback="setBandwidth"  param="LAN" object="_parent" />
+	</menuitem>
+-->
+</menu>
+
+<menu label="Экран" >
+<!--	<menuitem label="Lesson" action="function" callback="setLayout" param="Lesson" />
+	<menuitem label="Meeting" action="function" callback="setLayout" param="Meeting" />
+	<menuitem label="A/V" action="function" callback="setLayout" param="A/V"  />
+	<menuitem type="separator" /> 
+-->
+	<menuitem label="A/V" action="function" callback="setLayout" param="A/V" object="_parent" />
+	<menuitem type="separator" /> 
+	<menuitem selected="true"  type="check" label="Открытый экран" action="function" callback="shareLayout" object="_parent" />
+	<menuitem type="separator" /> 
+	<menuitem label="Полный экран" action="function" callback="doFullScreen" />
+</menu>
+
+<menu label="Настройки">
+	<menuitem label="Возможости" action="function" callback="capabilities" object="_parent" />
+	<menuitem type="separator" /> 
+	<menuitem label="Авторизация" action="function" callback="showSettings" param="auth" object="_parent" />
+	<menuitem label="Видео" action="function" callback="showSettings" param="video" object="_parent" />
+	<menuitem label="Аудио" action="function" callback="showSettings" param="audio" object="_parent" />
+	<menuitem type="separator" /> 
+	<menuitem label="Media" >
+		<menuitem label="Webcam Resolution" >
+			<menuitem type="radio" groupName="setResolution_group" label="120x90" action="function" callback="setResolution" param="120x90" object="_parent" />
+			<menuitem selected="true"  type="radio" groupName="setResolution_group" label="160x120" action="function" callback="setResolution" param="160x120" object="_parent" />
+			<menuitem type="radio" groupName="setResolution_group" label="240x180" action="function" callback="setResolution"  param="240x180" object="_parent" />
+			<menuitem type="radio" groupName="setResolution_group" label="320x240" action="function" callback="setResolution"  param="320x240" object="_parent" />
+			<menuitem type="radio" groupName="setResolution_group" label="420x315" action="function" callback="setResolution"  param="420x315" object="_parent" />
+			<menuitem type="radio" groupName="setResolution_group" label="640x480" action="function" callback="setResolution"  param="640x480" object="_parent" />
+		</menuitem>
+		<menuitem label="Webcam FPS" >
+			<menuitem type="radio" groupName="setFPS_group" label="5" action="function" callback="setFPS" param="5" object="_parent" />
+			<menuitem selected="true" type="radio" groupName="setFPS_group" label="10" action="function" callback="setFPS" param="10" object="_parent" />
+			<menuitem type="radio" groupName="setFPS_group" label="15" action="function" callback="setFPS"  param="15" object="_parent" />
+			<menuitem type="radio" groupName="setFPS_group" label="25" action="function" callback="setFPS"  param="20" object="_parent" />
+		</menuitem>
+		<menuitem type="separator" /> 
+		<menuitem label="Microphone Frequency" >
+			<menuitem type="radio" groupName="setRate_group" label="5.000Hz" action="function" callback="setRate" param="5" object="_parent" />
+			<menuitem type="radio" groupName="setRate_group" label="8.000Hz" action="function" callback="setRate" param="8" object="_parent" />
+			<menuitem selected="true" type="radio" groupName="setRate_group" label="11.000Hz" action="function" callback="setRate" param="11" object="_parent" />
+			<menuitem type="radio" groupName="setRate_group" label="22.000Hz" action="function" callback="setRate" param="22" object="_parent" />
+			<menuitem type="radio" groupName="setRate_group" label="44.000Hz" action="function" callback="setRate"  param="44" object="_parent" />
+		</menuitem>
+	</menuitem>
+</menu>
+
+<menu label="Справка">
+
+	<menuitem label="Лицензия" action="function" callback="license" object="_parent" />
+
+	<menuitem label="О программе" action="function" callback="about" object="_parent" />
+	
+</menu>
+
+
+<menu label="Отладка" >
+	<menuitem label="Журнал" action="function" callback="logs" object="_parent" />
+	<menuitem label="Переменные" action="function" callback="vars" object="_parent" />
+</menu>

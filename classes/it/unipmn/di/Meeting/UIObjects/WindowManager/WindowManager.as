@@ -798,8 +798,15 @@ class it.unipmn.di.Meeting.UIObjects.WindowManager.WindowManager extends MovieCl
 		
 		if(param.state!=undefined)
 			win.setState(param.state);
-			
+		
 		to.shareNewWindow(win, param);
+		
+		_root.Log.print('Maximize: '+param.param['maximize']);
+		if (param.param['maximize'] == 'true')
+		{
+			_root.Log.print("Start maximize for app_id "+param.id);
+			to.maximizeApplication(param.id);
+		}
 	}
 	
 	function newApplication (id, tit, app, localID, param, contentType, type) {
