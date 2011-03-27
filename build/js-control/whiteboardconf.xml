@@ -1,0 +1,12 @@
+<user name="debug" fullname="Debugger" id="3" role="poweruser" authentication_domain="default" authentication_id="3" authentication_token="test" />
+
+<application languageURI="http://red5-winxp/language.htm" language="ru_utf8" />
+
+<!-- Red5 Server -->
+<connection autoconnect="true" protocol="rtmp" host="red5-wxp" port="1935" application="Meeting" room="whiteboard-empty" />
+
+<windowmanager URL="../WM.swf" menu="whiteboard_menu.xml" />
+
+<components>
+<external URL="../WhiteboardPlus.swf" label="WhiteboardPlus" param="imageUrl=http://meetingpoint.di.unipmn.it/mod/meetingpoint/files/getimage.php?a%3d1&maximize=true" autoload="true" maximize="true" />
+</components>

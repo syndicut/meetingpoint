@@ -6,7 +6,7 @@
   <classTemplate>file:///C|/Documents and Settings/user/Local Settings/Application Data/Adobe/Flash CS5/ru_RU/Configuration/ActionScript 3.0/Templates/standardClass_as2.as</classTemplate>
   <classPath>.</classPath>
   <defaultApp>file://Rash/docs/работа/projects/meetingpoint/loader.fla</defaultApp>
-  <rootURI>file://Rash/docs/работа/projects/meetingpoint/</rootURI>
+  <rootURI>file:///C|/Inetpub/wwwroot/meet/</rootURI>
   <flexSDK/>
   <sources editable="false"/>
   <libraries editable="false"/>
@@ -24,11 +24,21 @@
     <uri label="OrologioTest.fla">file://Rash/docs/работа/projects/meetingpoint/Components/OrologioTest/OrologioTest.fla</uri>
     <uri label="Orologio.fla">file://Rash/docs/работа/projects/meetingpoint/Components/Orologio/Orologio.fla</uri>
     <uri label="Chat.fla">file://Rash/docs/работа/projects/meetingpoint/Components/Chat/Chat.fla</uri>
+    <uri label="loader.fla">file:///C|/Inetpub/wwwroot/meet/loader.fla</uri>
+    <uri label="WM.fla">file:///C|/Inetpub/wwwroot/meet/WM.fla</uri>
+    <uri label="WhiteboardPlus.fla">file:///C|/Inetpub/wwwroot/meet/Components/WhiteboardPlus/WhiteboardPlus.fla</uri>
+    <uri label="Whiteboard.fla">file:///C|/Inetpub/wwwroot/meet/Components/Whiteboard/Whiteboard.fla</uri>
+    <uri label="VideoConference.fla">file:///C|/Inetpub/wwwroot/meet/Components/RichVideoConference/VideoConference.fla</uri>
+    <uri label="ScrollWindow.fla">file:///C|/Inetpub/wwwroot/meet/Components/ScrollWindow/ScrollWindow.fla</uri>
+    <uri label="Presentation.fla">file:///C|/Inetpub/wwwroot/meet/Components/Presentation/Presentation.fla</uri>
+    <uri label="Poll.fla">file:///C|/Inetpub/wwwroot/meet/Components/Poll/Poll.fla</uri>
+    <uri label="Player.fla">file:///C|/Inetpub/wwwroot/meet/Components/Player/Player.fla</uri>
+    <uri label="OrologioTest.fla">file:///C|/Inetpub/wwwroot/meet/Components/OrologioTest/OrologioTest.fla</uri>
+    <uri label="Orologio.fla">file:///C|/Inetpub/wwwroot/meet/Components/Orologio/Orologio.fla</uri>
+    <uri label="Chat.fla">file:///C|/Inetpub/wwwroot/meet/Components/Chat/Chat.fla</uri>
   </compileList>
   <recentFiles editable="false">
-    <uri label="loader.fla">file://Rash/docs/работа/projects/meetingpoint/loader.fla</uri>
-    <uri label="WindowManager.as">file://Rash/docs/работа/projects/meetingpoint/classes/it/unipmn/di/Meeting/UIObjects/WindowManager/WindowManager.as</uri>
-    <uri label="WM.fla">file://Rash/docs/работа/projects/meetingpoint/WM.fla</uri>
+    <uri label="loader.fla">file:///C|/Inetpub/wwwroot/meet/loader.fla</uri>
   </recentFiles>
   <locations editable="false"/>
 </projectDescription>

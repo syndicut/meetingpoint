@@ -2,6 +2,8 @@
 import it.unipmn.di.Meeting.Connectors.IClientComponent; 
 import it.unipmn.di.Meeting.UIObjects.IUIWindowComponent;
 import it.unipmn.di.Meeting.Utils.Size;
+import it.unipmn.di.Meeting.Debug.*;
+import flash.external.ExternalInterface;
 import mx.containers.ScrollPane;
 import mx.core.UIObject;
 import mx.component.Button;
@@ -121,7 +123,7 @@ class it.unipmn.di.Meeting.components.WhiteboardPlus.WhiteboardPlus extends Movi
 	 * Tanslation
 	 */
 	this.controls.pointer_btn.label = _root.stringsManager.get("WBPLUS_BTN_POINTER");
-	_root.tooltip(this.controls.pointer_btn., _root.stringsManager.get("WBPLUS_BTN_POINTER_TT"));
+	_root.tooltip(this.controls.pointer_btn, _root.stringsManager.get("WBPLUS_BTN_POINTER_TT"));
 	
 	this.controls.arrow_btn.label = _root.stringsManager.get("WBPLUS_BTN_ARROW");
 	_root.tooltip(this.controls.arrow_btn, _root.stringsManager.get("WBPLUS_BTN_ARROW_TT"));
@@ -169,7 +171,26 @@ class it.unipmn.di.Meeting.components.WhiteboardPlus.WhiteboardPlus extends Movi
 	_root.tooltip(this.controls.zoom_stepper, _root.stringsManager.get("WBPLUS_STEPPER_ZOOM_TT"));
 	this.controls.page_label.text = _root.stringsManager.get("WBPLUS_PAGE");
 	_root.tooltip(this.controls.page_stepper, _root.stringsManager.get("WBPLUS_STEPPER_PAGE_TT"));
+	
+		if (ExternalInterface.available) {
+                try {
+                    _root.Log.print("Adding callback...");
+                    ExternalInterface.addCallback("setTool", this, setTool);
+                    if (checkJavaScriptReady()) {
+                        _root.Log.print("JavaScript is ready.");
+                    }
+                } catch (error:Error) {
+                    _root.Log.print("An Error occurred: " + error.message);
+                }
+            } else {
+                _root.Log.print("External interface is not available for this container.");
+            }
 	}
+	
+	private function checkJavaScriptReady():Boolean {
+            var isReady = ExternalInterface.call("isReady");
+            return isReady;
+    }
 	
 	function rect(mc, x, y, w, h) {
 			mc.moveTo(x, y);
@@ -327,6 +348,7 @@ class it.unipmn.di.Meeting.components.WhiteboardPlus.WhiteboardPlus extends Movi
 	}
 	
 	function setTool(t:String){
+		_root.Log.print("setTool: "+t);
 		var info = _root.getUserInformation();
 		if(info.role != "moderator" && 
 		   info.star != "moderator" &&

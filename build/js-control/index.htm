@@ -1,0 +1,37 @@
+<html>
+<head>
+<script language="JavaScript">
+     var jsReady = false;
+     function isReady() {
+         return jsReady;
+     }
+     function pageInit() {
+         jsReady = true;
+         console.log("JavaScript is ready.");
+     }
+     function thisMovie(movieName) {
+         if (navigator.appName.indexOf("Microsoft") != -1) {
+             return window[movieName];
+         } else {
+             return document[movieName];
+         }
+     }
+     function setTool(value) {
+         thisMovie("meetingpoint2").setTool(value);
+     }
+
+ </script>
+</head>
+<body onload="pageInit();">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" id="meetingpoint" width="800" height="600" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="../meetingpoint.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><param value="xmlfile=videoconf.xml" name="flashvars" /><embed src="../meetingpoint.swf" quality="high" bgcolor="#ffffff" width="800" height="600" swLiveConnect=true name="meetingpoint" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_ru" flashvars="xmlfile=videoconf.xml" />
+</object>
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" id="meetingpoint2" width="800" height="600" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="../meetingpoint.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><param value="xmlfile=whiteboardconf.xml" name="flashvars" /><embed src="../meetingpoint.swf" quality="high" bgcolor="#ffffff" width="800" height="600" swLiveConnect=true name="meetingpoint2" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_ru" flashvars="xmlfile=whiteboardconf.xml" />
+</object>
+<input type="button" value="Pencil" onclick="setTool('pencil');" />
+</body>
+</html>
