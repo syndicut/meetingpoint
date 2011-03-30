@@ -176,6 +176,9 @@ class it.unipmn.di.Meeting.components.WhiteboardPlus.WhiteboardPlus extends Movi
                 try {
                     _root.Log.print("Adding callback...");
                     ExternalInterface.addCallback("setTool", this, setTool);
+                    ExternalInterface.addCallback("setLineSize", this, setLineSize);
+                    ExternalInterface.addCallback("setLineColor", this, setLineColor);
+                    ExternalInterface.addCallback("setFillColor", this, setFillColor);
                     if (checkJavaScriptReady()) {
                         _root.Log.print("JavaScript is ready.");
                     }
